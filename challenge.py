@@ -50,6 +50,15 @@ def id_mtrx(n):
 m0 = id_mtrx(0) # empty matrix
 print("\nid_mtrx(0):")
 print(m0)
+m0 = id_mtrx(0.0) # float input
+print("\nid_mtrx(0.0):")
+print(m0)
+m0 = id_mtrx('0') # String input
+print("\nid_mtrx('0'):")
+print(m0)
+m0 = id_mtrx([0]) # integer list input
+print("\nid_mtrx([0]):")
+print(m0)
 m1 = id_mtrx(1) # 1x1 Identity matrix (list consisting of a list consisting of one element: 1)
 print("\nid_mtrx(1):")
 print(m1)
