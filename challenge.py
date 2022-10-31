@@ -24,7 +24,7 @@ Incompatible types passed as n should return the string "Error".
 
 '''
 
-def identityMatrix(n):
+def id_mtrx(n):
     if type(n) is not int:
         return "Error"
     matrix = []
@@ -47,29 +47,29 @@ def identityMatrix(n):
     return matrix
 
 ''' Tests '''
-m0 = identityMatrix(0) # empty matrix
-print("\nidentityMatrix(0):")
+m0 = id_mtrx(0) # empty matrix
+print("\nid_mtrx(0):")
 print(m0)
-m1 = identityMatrix(1) # 1x1 Identity matrix (list consisting of a list consisting of one element: 1)
-print("\nidentityMatrix(1):")
+m1 = id_mtrx(1) # 1x1 Identity matrix (list consisting of a list consisting of one element: 1)
+print("\nid_mtrx(1):")
 print(m1)
-m2 = identityMatrix(-1) # 1x1 Identity matrix (list consisting of a list consisting of one element: 1)
-print("\nidentityMatrix(-1):")
+m2 = id_mtrx(-1) # 1x1 Identity matrix (list consisting of a list consisting of one element: 1)
+print("\nid_mtrx(-1):")
 print(m2)
-m3 = identityMatrix(3) # 3x3 matrix
-print("\nidentityMatrix(3):")
+m3 = id_mtrx(3) # 3x3 matrix
+print("\nid_mtrx(3):")
 for elem in m3:
     print(elem)
-m4 = identityMatrix(-3) # 3x3 Inverse Identity matrix
-print("\nidentityMatrix(-3):")
+m4 = id_mtrx(-3) # 3x3 Inverse Identity matrix
+print("\nid_mtrx(-3):")
 for elem in m4:
     print(elem)
-m5 = identityMatrix(15) # 15x15 matrix
-print("\nidentityMatrix(15):")
+m5 = id_mtrx(15) # 15x15 matrix
+print("\nid_mtrx(15):")
 for elem in m5:
     print(elem)
-m6 = identityMatrix(-15) # 15x15 Inverse Identity matrix
-print("\nidentityMatrix(-15):")
+m6 = id_mtrx(-15) # 15x15 Inverse Identity matrix
+print("\nid_mtrx(-15):")
 for elem in m6:
     print(elem)
 print()
